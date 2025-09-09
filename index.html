@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moon</title>
+    <title>by moon</title>
     <style>
         * {
             margin: 0;
@@ -17,40 +17,14 @@
             position: fixed;
             width: 40px;
             height: 40px;
-            background: url('custom_cursor.png') no-repeat center center;
+            background: url('assets/custom_cursor.png') no-repeat center center;
             background-size: contain;
             pointer-events: none;
             z-index: 9999;
             transform: translate(-50%, -50%);
         }
 
-
         
-        * {
-            cursor: none !important;
-        }
-        
-        *:focus,
-        *:active,
-        a:focus,
-        a:active,
-        button:focus,
-        button:active {
-            cursor: none !important;
-        }
-
-        
-        input[type="range"],
-        input[type="range"]::-webkit-slider-thumb,
-        input[type="range"]::-moz-range-thumb {
-            cursor: none !important;
-        }
-
-        
-        *:focus {
-            outline: none;
-        }
-
         body {
             background-color: #000;
             color: #fff;
@@ -513,15 +487,15 @@
         }
 
         #python-bar {
-            background: linear-gradient(67deg, #ff6b6b, #ff9f9f);
+            background: linear-gradient(90deg, #ff6b6b, #ff9f9f);
         }
 
-        #html-bar {
-            background: linear-gradient(45deg, #4facfe, #00f2fe);
+        #cpp-bar {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
         }
 
-        #golang-bar {
-            background: linear-gradient(30deg, #43e97b, #38f9d7);
+        #csharp-bar {
+            background: linear-gradient(90deg, #43e97b, #38f9d7);
         }
 
         
@@ -645,26 +619,6 @@
             100% {
                 transform: rotate(360deg);
             }
-        }
-        @keyframes titleGlitch {
-            0% { content: ""; }
-            20% { content: "m"; }
-            40% { content: "mo"; }
-            60% { content: "moo"; }
-            80% { content: "moon"; }
-            100% { content: "moons"; }
-        }
-
-        @keyframes titleCursor {
-            0% { opacity: 0; }
-            50% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-
-        .title-container::after {
-            content: "|";
-            animation: titleCursor 1s infinite;
-            opacity: 0;
         }
 
         
@@ -883,6 +837,7 @@
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Retro+Gaming&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
 </head>
 <body class="home-theme" onload="initMedia()">
     
@@ -896,7 +851,7 @@
     <div class="container">
         
         <video id="background" autoplay loop muted playsinline webkit-playsinline>
-            <source src="background.mp4" type="video/mp4">
+            <source src="assets/background.mp4" type="video/mp4">
         </video>
 
         
@@ -912,69 +867,20 @@
         <div id="profile-block">
             <div class="profile-header">
                 <div class="profile-container">
-                    <img src="profile.gif" alt="Profile" class="profile-picture">
+                    <img src="assets/chuckabi.jpg" alt="Profile" class="profile-picture">
                 </div>
                 <div class="profile-info">
                     <div class="name-and-badges">
-                        <div id="profile-name">Moon</div>
-                        
-                        <div class="badge-box">
-                            <div class="badge-box-inner">
-                                <div class="badge-group">
-                                    <div class="badge-container">
-                                        <img src="staff.gif" alt="Staff" class="badge">
-                                        <span class="tooltip">Staff Member</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" owner.gif" alt="Owner" class="badge">
-                                        <span class="tooltip">Owner</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" partner.gif" alt="Partner" class="badge">
-                                        <span class="tooltip">Partner</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" developer.png" alt="Developer" class="badge">
-                                        <span class="tooltip">Developer</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" bug_bounty.gif" alt="Bug Bounty" class="badge">
-                                        <span class="tooltip">Bug Bounty</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" hated_guns.gif" alt="Hated by Guns.lol" class="badge">
-                                        <span class="tooltip">Hated by Guns.lol</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" hated_fakecrime.gif" alt="Hated by Fakecrime.bio" class="badge">
-                                        <span class="tooltip">Hated by Fakecrime.bio</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" verified.gif" alt="Verified" class="badge">
-                                        <span class="tooltip">Verified</span>
-                                    </div>
-                                    <div class="badge-container">
-                                        <img src=" rule_maker.gif" alt="Rule Maker" class="badge">
-                                        <span class="tooltip">Rule Maker</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="discord-activity" style="font-size: 16px; color: rgba(255, 255, 255, 0.6); margin-top: 5px;">
-                            Loading Discord activity...
+                        <div id="profile-name">moon</div><
                     </div>
                     <div id="profile-bio"></div>
                 </div>
             </div>
 
-            <div class="bio-separator"></div>
-
             <div class="profile-footer">
 
                 <div class="social-links">
-                    
-                    <a href="https://github.com/PonziFi" target="_blank">
+                     <a href="https://github.com/PonziFi" target="_blank">
                         <img src="github.png" alt="GitHub" class="social-icon">
                     </a>
                     
@@ -986,7 +892,7 @@
                     </a>
                     <a href="https://www.instagram.com/nzthan__q" target="_blank">
                         <img src="namemc.png" alt="TikTok" class="social-icon">
-                    </a>
+              </a>
                 </div>
 
 
@@ -995,7 +901,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
                     </svg>
-                    <span id="visitor-count">182309</span>
+                    <span id="visitor-count">∞</span>
                     <span class="tooltip">Profile Views</span>
                 </div>
             </div>
@@ -1006,9 +912,9 @@
             <h2 class="skills-title">Programming Skills</h2>
             <div class="skill">
                 <div class="skill-name">
-                    <img src="python.png" alt="Python" class="skill-icon">
+                    <img src="assets/python.png" alt="Python" class="skill-icon">
                     <span>Python</span>
-                    <span>67%</span>
+                    <span>87%</span>
                 </div>
                 <div class="skill-bar-container">
                     <div id="python-bar" class="skill-bar"></div>
@@ -1016,22 +922,22 @@
             </div>
             <div class="skill">
                 <div class="skill-name">
-                    <img src="html.png" alt="C++" class="skill-icon">
-                    <span>html</span>
-                    <span>45%</span>
+                    <img src="assets/cpp.png" alt="C++" class="skill-icon">
+                    <span>C++</span>
+                    <span>75%</span>
                 </div>
                 <div class="skill-bar-container">
-                    <div id="html-bar" class="skill-bar"></div>
+                    <div id="cpp-bar" class="skill-bar"></div>
                 </div>
             </div>
             <div class="skill">
                 <div class="skill-name">
-                    <img src="golang.png" alt="C#" class="skill-icon">
-                    <span>Go</span>
-                    <span>30%</span>
+                    <img src="assets/csharp.png" alt="C#" class="skill-icon">
+                    <span>C#</span>
+                    <span>80%</span>
                 </div>
                 <div class="skill-bar-container">
-                    <div id="golang-bar" class="skill-bar"></div>
+                    <div id="csharp-bar" class="skill-bar"></div>
                 </div>
             </div>
         </div>
@@ -1071,19 +977,19 @@
 
 
     <audio id="background-music" loop>
-        <source src="background.mp3" type="audio/mp3">
+        <source src="assets/background_music.mp3" type="audio/mp3">
     </audio>
     <audio id="hacker-music" loop muted>
-        <source src="real.mp3" type="audio/mp3">
+        <source src="assets/hacker_music.mp3" type="audio/mp3">
     </audio>
     <audio id="rain-music" loop muted>
-        <source src="rain_music.mp3" type="audio/mp3">
+        <source src="assets/rain_music.mp3" type="audio/mp3">
     </audio>
     <audio id="anime-music" loop muted>
-        <source src="anime_music.mp3" type="audio/mp3">
+        <source src="assets/anime_music.mp3" type="audio/mp3">
     </audio>
     <audio id="car-music" loop muted>
-        <source src="hacker_music.mp3" type="audio/mp3">
+        <source src="assets/car_music.mp3" type="audio/mp3">
     </audio>
 
 
@@ -1091,7 +997,5 @@
 
 
     <script src="script.js"></script>
-    
 </body>
-
 </html>
