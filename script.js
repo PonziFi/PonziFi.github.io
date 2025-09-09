@@ -751,7 +751,7 @@ startScreen.addEventListener('click', async () => {
 
   async function fetchDiscordActivity() {
     try {
-      const res = await fetch(`https://api.lanyard.rest/v1/users/1255568617823670282`);
+      const res = await fetch(`https://api.lanyard.rest/v1/users/963575174811222037`);
       
       if (!res.ok) {
         throw new Error(`API request failed with status ${res.status}`);
@@ -809,3 +809,4 @@ startScreen.addEventListener('click', async () => {
   setInterval(fetchDiscordActivity, 15000); // update every 15s
 
 });
+
