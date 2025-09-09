@@ -41,7 +41,7 @@ function initMedia() {
 }
 
 function animateTitle() {
-    const title = "Snow";
+    const title = "Moon";
     let currentTitle = "";
     let index = 0;
     let isDeleting = false;
@@ -293,7 +293,7 @@ startScreen.addEventListener('click', async () => {
     typeWriterBio();
   });
 
-  const name = "snow";
+  const name = "moon";
   let nameText = '';
   let nameIndex = 0;
   let isNameDeleting = false;
@@ -327,8 +327,8 @@ startScreen.addEventListener('click', async () => {
   }, 500);
 
   const bioMessages = [
-    "Fu*k Guns.lol & Fakecrime.bio ",
-    "\"Hello this is snow\""
+    "im above you. ",
+    "\"wsp fan\""
   ];
   let bioText = '';
   let bioIndex = 0;
@@ -807,4 +807,5 @@ startScreen.addEventListener('click', async () => {
   // Call the function initially and set interval
   fetchDiscordActivity();
   setInterval(fetchDiscordActivity, 15000); // update every 15s
+
 });
