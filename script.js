@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Start screen typewriter
-  const startMessage = "Click here to see the motion baby";
+  const startMessage = "lovers grip?";
   let startTextContent = '';
   let startIndex = 0;
   let startCursorVisible = true;
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set static name and bio text
   function setStaticContent() {
     profileName.textContent = "moon";
-    profileBio.textContent = 'im above you.';
+    profileBio.textContent = 'whats the point of love?';
   }
 
   // Enhanced start screen click handler
@@ -467,3 +467,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start the typewriter for start screen
   typeWriterStart();
 });
+
